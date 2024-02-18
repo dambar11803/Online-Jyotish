@@ -502,7 +502,7 @@ label{
 /* 1180 px  */
 
 {
-   .logo-text,
+   .logo-text
    {
     padding-left:2.5rem;
    } 
@@ -695,6 +695,10 @@ label{
 @media (max-width:28em){
     /* @448px  */
 
+    html{
+        font-size:56%;
+    }
+
     .container{
         width:44rem;
     }
@@ -776,8 +780,9 @@ label{
     input[type=text], input[type=email],textarea
     {
     width: 100%;
+    font-size:2rem;
 
 }
-
+}
 
 }
