@@ -151,6 +151,8 @@ li{
 .about-title{
     color:var(--com-heading);
     font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
     
 }
 
@@ -167,14 +169,14 @@ li{
 }
 
 .about-data{
-    padding:2.5rem 2.5rem;
+    padding:2.5rem 0;
     font-size: 1.5rem;
     /* padding-top:2rem;
     padding-right:1.5rem; */
     word-spacing: 1rem;
     text-align: justify;
     line-height: 2.8rem;
-    font-weight: 500;
+    font-weight:550;
     color:#666666;
 }
 
@@ -411,7 +413,7 @@ label{
 /* Footer Section  */
 
 .footer{
-    height:16rem;
+    /* height:16rem; */
     background-color:var(--header-back);
 
 }
@@ -443,8 +445,12 @@ label{
     font-size:1.4rem;
 }
 
+.f-link{
+    text-decoration: none;
+}
+
 .visitor-counter{
-    padding:1rem auto;
+    padding-bottom:1.5rem;
     /* font-size:1rem; */
     background-color: var(--header-back);
 
@@ -548,11 +554,7 @@ label{
     /* 1em=16px  */
 
 
-    /* .html{
-        font-size:5%;
-    } */
-
-    .container{
+     .container{
         max-width:76rem;
     }
 
@@ -573,8 +575,7 @@ label{
     }
 
     .about-data{
-        padding-left:3rem;
-        padding-right:3rem;
+       
         padding-bottom:5rem;
     }
 
@@ -622,26 +623,6 @@ label{
   
 }
 
-/* 
-@media(max-width:43.12em)
-{
-   
-
-    .header{
-        height:10rem;
-        justify-content:space-evenly;
-
-    .logo-text{
-        font-size:2rem;
-    }
-
-    .navbar-lists {
-        gap:3rem;
-        font-size:1.7rem;
-    }
-}
-} 
-*/
 
 @media (max-width:678px)
 {
@@ -679,6 +660,14 @@ label{
     font-size:1.6rem;
    }
 
+   .about-data{
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+   }
+   
+   .about-title{
+    padding-left:2.5rem;
+   }
 
 }
 
@@ -695,30 +684,57 @@ label{
         max-width: 50rem;
     }
 
+    input[type=text], input[type=email],textarea{
+  width: 95%;
+  padding: 1.3rem;
+  font-size:1.4rem;
+
 }
 
+
+@media (max-width:28em){
+    /* @448px  */
+
+    .container{
+        width:44rem;
+    }
+
+    .contact-form{
+        width:40rem;
+    }
+
+    
+}
 
 
 @media (max-width:22.5em){
 /* 360px  */
 
     html{
-        font-size: 50%;
+        font-size: 55%;
     }
+
+    .header-title{
+        font-size:3rem;
+
+    }
+    
+
 
     .container{
         width:35rem;
+        overflow-x: hidden;
     }
 
     .header{
-        height:10rem;
+        height:12rem;
     }
 
       .navbar-lists{
         display:flex;
         justify-content: center;
         align-items: center;
-        gap:2.5rem;
+        gap:4rem;
     }
 
     .logo-text{
@@ -727,10 +743,12 @@ label{
 
     .about-title{
         padding-left:3rem;
+        font-weight: 700;
     }
 
     .a-link{
-        font-size:1.9rem;
+        font-size:1.7rem;
+        
     }
 
     .about-div{
@@ -742,12 +760,21 @@ label{
     .horoscope-image{
         width:100%;
     }
+
+    .card-title{
+        font-size:2.5rem;
+    }
+
+    .card-address{
+        font-size:1.7rem;
+    }
    
     .contact-form{
         width: 30rem;
             }
 
-    input[type=text], input[type=email],textarea{
+    input[type=text], input[type=email],textarea
+    {
     width: 100%;
 
 }
